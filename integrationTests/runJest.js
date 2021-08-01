@@ -4,7 +4,7 @@ const path = require('path');
 
 const rootDir = path.join(__dirname, '..');
 
-const normalize = output =>
+const normalize = (output) =>
   output
     .replace(/\(?\d*\.?\d+ ?m?s\b\)?/g, '')
     .replace(/, estimated/g, '')

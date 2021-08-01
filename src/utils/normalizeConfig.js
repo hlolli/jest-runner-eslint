@@ -1,7 +1,7 @@
-const identity = v => v;
-const negate = v => !v;
-const asArray = v => (typeof v === 'string' ? [v] : v);
-const asInt = v => {
+const identity = (v) => v;
+const negate = (v) => !v;
+const asArray = (v) => (typeof v === 'string' ? [v] : v);
+const asInt = (v) => {
   if (typeof v === 'number') {
     return v;
   }
@@ -104,7 +104,7 @@ const BASE_CONFIG = {
 };
 
 /* eslint-disable no-param-reassign */
-const normalizeCliOptions = rawConfig =>
+const normalizeCliOptions = (rawConfig) =>
   Object.keys(BASE_CONFIG).reduce((config, key) => {
     const {
       name = key,
@@ -121,7 +121,7 @@ const normalizeCliOptions = rawConfig =>
   }, {});
 /* eslint-enable no-param-reassign */
 
-const normalizeConfig = config => {
+const normalizeConfig = (config) => {
   return {
     ...config,
     cliOptions: normalizeCliOptions(config.cliOptions || {}),

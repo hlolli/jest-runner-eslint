@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this, global-require */
 const path = require('path');
 
-const runESLintRunnerWithMockedEngine = options => {
+const runESLintRunnerWithMockedEngine = (options) => {
   jest.resetModules();
   jest.doMock('eslint', () => ({
     CLIEngine: class {
