@@ -1,4 +1,4 @@
-const { pass, fail, skip } = require('create-jest-runner');
+const { pass, fail, skip } = require('@hlolli/create-jest-runner');
 const { CLIEngine } = require('eslint');
 const getESLintOptions = require('../utils/getESLintOptions');
 

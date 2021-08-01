@@ -1,4 +1,4 @@
-const { createJestRunner } = require('create-jest-runner');
+const { createJestRunner } = require('@hlolli/create-jest-runner');
 const configOverrides = require('../utils/configOverrides');
 
 const runner = createJestRunner(require.resolve('./runESLint'), {

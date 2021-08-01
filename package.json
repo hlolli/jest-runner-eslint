@@ -1,5 +1,5 @@
 {
-  "name": "jest-runner-eslint",
+  "name": "@hlolli/jest-runner-eslint",
   "version": "0.10.1",
   "main": "build/runner",
   "author": "Rogelio Guzman <rogelioguzmanh@gmail.com>",
@@ -10,10 +10,7 @@
     "url": "https://github.com/jest-community/jest-runner-eslint.git"
   },
   "homepage": "https://github.com/jest-community/jest-runner-eslint",
-  "files": [
-    "build/",
-    "watch-fix.js"
-  ],
+  "files": ["build/", "watch-fix.js"],
   "scripts": {
     "test": "jest",
     "lint": "eslint . --config ./.eslintrc.json --no-eslintrc",
@@ -26,7 +23,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "cosmiconfig": "^7.0.0",
-    "create-jest-runner": "^0.7.0"
+    "@hlolli/create-jest-runner": "^0.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
